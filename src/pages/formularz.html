@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="normalizer.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Formularz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tu bedzie formularz</h1>
+    </header>
+    <main>
+      <form method="post" action="https://dev.cotenfrontend.pl/">
+        <p>
+          <label for="firstName">Your name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Daniel"
+          />
+        </p>
+        <p>
+          <label
+            >Your last name:
+            <input
+              name="lastName"
+              id="lastName"
+              type="text"
+              placeholder="Ogorzałek"
+          /></label>
+        </p>
+        <fieldset>
+          <legend>Sex:</legend>
+          <p>
+            <label
+              ><input
+                type="radio"
+                id="sexMale"
+                name="sex"
+                value="Male"
+              />Male</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                type="radio"
+                id="sexFemale"
+                name="sex"
+                value="Female"
+              />Female</label
+            >
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Adress:</legend>
+          <p>
+            <label for="city">Miejscowosc:</label>
+            <input id="city" name="city" type="text" />
+          </p>
+          <p>
+            <label for="street">Ulica:</label>
+            <input id="street" name="street" type="text" />
+          </p>
+          <p>
+            <label for="homeNumber">Nr.mieszkania/domu:</label>
+            <input id="homeNumber" name="homeNumber" type="text" />
+          </p>
+          <p>
+            <label for="kodPocztowy">Kod Pocztowy:</label>
+            <input id="kodPocztowy" name="kodPocztowy" type="text" />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Internet devices:</legend>
+          <p>
+            <label
+              ><input
+                name="internetDevices"
+                value="smartphone"
+                type="checkbox"
+              />Smartphone</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                name="internetDevices"
+                value="desctopComputer"
+                type="checkbox"
+              />Desctop Computer</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                name="internetDevices"
+                value="laptop"
+                type="checkbox"
+              />Laptop</label
+            >
+          </p>
+        </fieldset>
+        <p>
+          <label for="favoriteBand">Favorite band:</label>
+          <select name="favoriteBand" id="favoriteBand">
+            <option value="band1">Linkin Park</option>
+            <option value="band2">Slipknot</option>
+            <option value="band3">Metalica</option>
+            <option value="band4">System of a Down</option>
+          </select>
+        </p>
+        <p>
+          <label for="yourStory">Your story</label>
+          <textarea id="yourStory" name="yourStory">Siema Siema</textarea>
+        </p>
+        <p>
+          <input type="submit" id="send" name="send" value="Send" />
+        </p>
+      </form>
+    </main>
+    <footer>
+      <h6>Lorem, ipsum dolor.</h6>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum,
+        blanditiis!
+      </p>
+    </footer>
+  </body>
+</html>
